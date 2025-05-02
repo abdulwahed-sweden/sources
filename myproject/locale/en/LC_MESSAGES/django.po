@@ -1,0 +1,209 @@
+# English translation file
+msgid ""
+msgstr ""
+"Project-Id-Version: multilingual-django-tailwind\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-02 12:00+0000\n"
+"PO-Revision-Date: 2025-05-02 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Core templates translations
+msgid "Welcome to our Multilingual Website"
+msgstr "Welcome to our Multilingual Website"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Multilingual App"
+msgstr "Multilingual App"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "About"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Multilingual Django Project"
+msgstr "Multilingual Django Project"
+
+msgid "Learn More"
+msgstr "Learn More"
+
+msgid "About Our Project"
+msgstr "About Our Project"
+
+msgid "Technology Stack"
+msgstr "Technology Stack"
+
+msgid "Features"
+msgstr "Features"
+
+msgid "Django - Web framework"
+msgstr "Django - Web framework"
+
+msgid "Tailwind CSS - Utility-first CSS framework"
+msgstr "Tailwind CSS - Utility-first CSS framework"
+
+msgid "Alpine.js - Minimal JavaScript framework"
+msgstr "Alpine.js - Minimal JavaScript framework"
+
+msgid "SQLite - Database (configurable to others)"
+msgstr "SQLite - Database (configurable to others)"
+
+msgid "Django REST Framework - API development"
+msgstr "Django REST Framework - API development"
+
+msgid "Multi-language support"
+msgstr "Multi-language support"
+
+msgid "Dark and light theme"
+msgstr "Dark and light theme"
+
+msgid "Responsive design"
+msgstr "Responsive design"
+
+msgid "User authentication"
+msgstr "User authentication"
+
+msgid "REST API endpoints"
+msgstr "REST API endpoints"
+
+msgid "RTL support for Arabic"
+msgstr "RTL support for Arabic"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Subject"
+msgstr "Subject"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Send Message"
+msgstr "Send Message"
+
+# User related translations
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Sign In"
+msgstr "Sign In"
+
+msgid "Don't have an account?"
+msgstr "Don't have an account?"
+
+msgid "Already have an account?"
+msgstr "Already have an account?"
+
+msgid "My Profile"
+msgstr "My Profile"
+
+msgid "Save Changes"
+msgstr "Save Changes"
+
+msgid "Multi-language support (Arabic, Swedish, English, Turkish)"
+msgstr "Multi-language support (Arabic, Swedish, English, Turkish)"
+
+msgid "Dark mode with Tailwind CSS"
+msgstr "Dark mode with Tailwind CSS"
+
+msgid "Responsive design for all devices"
+msgstr "Responsive design for all devices"
+
+msgid "Language switcher with flag icons"
+msgstr "Language switcher with flag icons"
+
+msgid "Right-to-left (RTL) support for Arabic"
+msgstr "Right-to-left (RTL) support for Arabic"
+
+msgid "Custom font sizing for Arabic text"
+msgstr "Custom font sizing for Arabic text"
+
+# User model fields
+msgid "Biography"
+msgstr "Biography"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Birth Date"
+msgstr "Birth Date"
+
+msgid "Preferred Language"
+msgstr "Preferred Language"
+
+# API model fields
+msgid "Title"
+msgstr "Title"
+
+msgid "Content"
+msgstr "Content"
+
+msgid "Created At"
+msgstr "Created At"
+
+msgid "Updated At"
+msgstr "Updated At"
+
+msgid "Language"
+msgstr "Language"
+
+# Language names
+msgid "English"
+msgstr "English"
+
+msgid "Swedish"
+msgstr "Swedish"
+
+msgid "Arabic"
+msgstr "Arabic"
+
+msgid "Turkish"
+msgstr "Turkish"
+
+# URL translations
+msgid "about/"
+msgstr "about/"
+
+msgid "contact/"
+msgstr "contact/"
+
+msgid "register/"
+msgstr "register/"
+
+msgid "login/"
+msgstr "login/"
+
+msgid "logout/"
+msgstr "logout/"
+
+msgid "profile/"
+msgstr "profile/"

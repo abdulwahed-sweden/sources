@@ -1,0 +1,209 @@
+# Turkish translation file
+msgid ""
+msgstr ""
+"Project-Id-Version: multilingual-django-tailwind\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-02 12:00+0000\n"
+"PO-Revision-Date: 2025-05-02 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# Core templates translations
+msgid "Welcome to our Multilingual Website"
+msgstr "Çok Dilli Web Sitemize Hoş Geldiniz"
+
+msgid "About Us"
+msgstr "Hakkımızda"
+
+msgid "Contact Us"
+msgstr "Bize Ulaşın"
+
+msgid "Multilingual App"
+msgstr "Çok Dilli Uygulama"
+
+msgid "Home"
+msgstr "Ana Sayfa"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "Contact"
+msgstr "İletişim"
+
+msgid "Login"
+msgstr "Giriş"
+
+msgid "Register"
+msgstr "Kayıt Ol"
+
+msgid "Logout"
+msgstr "Çıkış"
+
+msgid "Multilingual Django Project"
+msgstr "Çok Dilli Django Projesi"
+
+msgid "Learn More"
+msgstr "Daha Fazla Bilgi"
+
+msgid "About Our Project"
+msgstr "Projemiz Hakkında"
+
+msgid "Technology Stack"
+msgstr "Teknoloji Yığını"
+
+msgid "Features"
+msgstr "Özellikler"
+
+msgid "Django - Web framework"
+msgstr "Django - Web çerçevesi"
+
+msgid "Tailwind CSS - Utility-first CSS framework"
+msgstr "Tailwind CSS - Utility-first CSS çerçevesi"
+
+msgid "Alpine.js - Minimal JavaScript framework"
+msgstr "Alpine.js - Minimal JavaScript çerçevesi"
+
+msgid "SQLite - Database (configurable to others)"
+msgstr "SQLite - Veritabanı (diğerlerine yapılandırılabilir)"
+
+msgid "Django REST Framework - API development"
+msgstr "Django REST Framework - API geliştirme"
+
+msgid "Multi-language support"
+msgstr "Çoklu dil desteği"
+
+msgid "Dark and light theme"
+msgstr "Karanlık ve aydınlık tema"
+
+msgid "Responsive design"
+msgstr "Duyarlı tasarım"
+
+msgid "User authentication"
+msgstr "Kullanıcı kimlik doğrulama"
+
+msgid "REST API endpoints"
+msgstr "REST API uç noktaları"
+
+msgid "RTL support for Arabic"
+msgstr "Arapça için RTL desteği"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Email"
+msgstr "E-posta"
+
+msgid "Subject"
+msgstr "Konu"
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "Send Message"
+msgstr "Mesaj Gönder"
+
+# User related translations
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+msgid "Password"
+msgstr "Şifre"
+
+msgid "Sign In"
+msgstr "Giriş Yap"
+
+msgid "Don't have an account?"
+msgstr "Hesabınız yok mu?"
+
+msgid "Already have an account?"
+msgstr "Zaten bir hesabınız var mı?"
+
+msgid "My Profile"
+msgstr "Profilim"
+
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+msgid "Multi-language support (Arabic, Swedish, English, Turkish)"
+msgstr "Çoklu dil desteği (Arapça, İsveççe, İngilizce, Türkçe)"
+
+msgid "Dark mode with Tailwind CSS"
+msgstr "Tailwind CSS ile karanlık mod"
+
+msgid "Responsive design for all devices"
+msgstr "Tüm cihazlar için duyarlı tasarım"
+
+msgid "Language switcher with flag icons"
+msgstr "Bayrak simgeleri ile dil değiştirici"
+
+msgid "Right-to-left (RTL) support for Arabic"
+msgstr "Arapça için sağdan sola (RTL) desteği"
+
+msgid "Custom font sizing for Arabic text"
+msgstr "Arapça metin için özel yazı tipi boyutlandırma"
+
+# User model fields
+msgid "Biography"
+msgstr "Biyografi"
+
+msgid "Location"
+msgstr "Konum"
+
+msgid "Birth Date"
+msgstr "Doğum Tarihi"
+
+msgid "Preferred Language"
+msgstr "Tercih Edilen Dil"
+
+# API model fields
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Content"
+msgstr "İçerik"
+
+msgid "Created At"
+msgstr "Oluşturulma Tarihi"
+
+msgid "Updated At"
+msgstr "Güncellenme Tarihi"
+
+msgid "Language"
+msgstr "Dil"
+
+# Language names
+msgid "English"
+msgstr "İngilizce"
+
+msgid "Swedish"
+msgstr "İsveççe"
+
+msgid "Arabic"
+msgstr "Arapça"
+
+msgid "Turkish"
+msgstr "Türkçe"
+
+# URL translations
+msgid "about/"
+msgstr "hakkinda/"
+
+msgid "contact/"
+msgstr "iletisim/"
+
+msgid "register/"
+msgstr "kayit/"
+
+msgid "login/"
+msgstr "giris/"
+
+msgid "logout/"
+msgstr "cikis/"
+
+msgid "profile/"
+msgstr "profil/"

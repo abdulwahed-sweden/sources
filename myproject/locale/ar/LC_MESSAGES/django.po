@@ -1,0 +1,209 @@
+# Arabic translation file
+msgid ""
+msgstr ""
+"Project-Id-Version: multilingual-django-tailwind\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-02 12:00+0000\n"
+"PO-Revision-Date: 2025-05-02 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+# Core templates translations
+msgid "Welcome to our Multilingual Website"
+msgstr "مرحبًا بكم في موقعنا متعدد اللغات"
+
+msgid "About Us"
+msgstr "من نحن"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Multilingual App"
+msgstr "تطبيق متعدد اللغات"
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "About"
+msgstr "حول"
+
+msgid "Contact"
+msgstr "اتصال"
+
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+msgid "Register"
+msgstr "تسجيل"
+
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+msgid "Multilingual Django Project"
+msgstr "مشروع جانغو متعدد اللغات"
+
+msgid "Learn More"
+msgstr "معرفة المزيد"
+
+msgid "About Our Project"
+msgstr "حول مشروعنا"
+
+msgid "Technology Stack"
+msgstr "التقنيات المستخدمة"
+
+msgid "Features"
+msgstr "المميزات"
+
+msgid "Django - Web framework"
+msgstr "جانغو - إطار عمل الويب"
+
+msgid "Tailwind CSS - Utility-first CSS framework"
+msgstr "تيلويند CSS - إطار عمل CSS"
+
+msgid "Alpine.js - Minimal JavaScript framework"
+msgstr "ألباين.جي إس - إطار جافاسكريبت مينيمال"
+
+msgid "SQLite - Database (configurable to others)"
+msgstr "SQL لايت - قاعدة بيانات (قابلة للتكوين إلى أخرى)"
+
+msgid "Django REST Framework - API development"
+msgstr "جانغو REST Framework - تطوير API"
+
+msgid "Multi-language support"
+msgstr "دعم تعدد اللغات"
+
+msgid "Dark and light theme"
+msgstr "الوضع الداكن والفاتح"
+
+msgid "Responsive design"
+msgstr "تصميم متجاوب"
+
+msgid "User authentication"
+msgstr "مصادقة المستخدم"
+
+msgid "REST API endpoints"
+msgstr "نقاط نهاية REST API"
+
+msgid "RTL support for Arabic"
+msgstr "دعم اليمين إلى اليسار للغة العربية"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Subject"
+msgstr "الموضوع"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Send Message"
+msgstr "إرسال الرسالة"
+
+# User related translations
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Sign In"
+msgstr "تسجيل الدخول"
+
+msgid "Don't have an account?"
+msgstr "ليس لديك حساب؟"
+
+msgid "Already have an account?"
+msgstr "هل لديك حساب بالفعل؟"
+
+msgid "My Profile"
+msgstr "ملفي الشخصي"
+
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+msgid "Multi-language support (Arabic, Swedish, English, Turkish)"
+msgstr "دعم متعدد اللغات (العربية، السويدية، الإنجليزية، التركية)"
+
+msgid "Dark mode with Tailwind CSS"
+msgstr "الوضع الداكن مع تيلويند CSS"
+
+msgid "Responsive design for all devices"
+msgstr "تصميم متجاوب لجميع الأجهزة"
+
+msgid "Language switcher with flag icons"
+msgstr "مُبدّل اللغة مع أيقونات الأعلام"
+
+msgid "Right-to-left (RTL) support for Arabic"
+msgstr "دعم اليمين إلى اليسار (RTL) للغة العربية"
+
+msgid "Custom font sizing for Arabic text"
+msgstr "حجم خط مخصص للنص العربي"
+
+# User model fields
+msgid "Biography"
+msgstr "السيرة الذاتية"
+
+msgid "Location"
+msgstr "الموقع"
+
+msgid "Birth Date"
+msgstr "تاريخ الميلاد"
+
+msgid "Preferred Language"
+msgstr "اللغة المفضلة"
+
+# API model fields
+msgid "Title"
+msgstr "العنوان"
+
+msgid "Content"
+msgstr "المحتوى"
+
+msgid "Created At"
+msgstr "تم الإنشاء في"
+
+msgid "Updated At"
+msgstr "تم التحديث في"
+
+msgid "Language"
+msgstr "اللغة"
+
+# Language names
+msgid "English"
+msgstr "الإنجليزية"
+
+msgid "Swedish"
+msgstr "السويدية"
+
+msgid "Arabic"
+msgstr "العربية"
+
+msgid "Turkish"
+msgstr "التركية"
+
+# URL translations
+msgid "about/"
+msgstr "حول/"
+
+msgid "contact/"
+msgstr "اتصال/"
+
+msgid "register/"
+msgstr "تسجيل/"
+
+msgid "login/"
+msgstr "دخول/"
+
+msgid "logout/"
+msgstr "خروج/"
+
+msgid "profile/"
+msgstr "ملف/"
