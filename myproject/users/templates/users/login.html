@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">{{ title }}</h1>
+    <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+        <div class="p-6">
+            <form method="post">
+                {% csrf_token %}
+                
+                <div class="mb-4">
+                    <label for="{{ form.username.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {{ form.username.label }}
+                    </label>
+                    <div class="mt-1">
+                        {{ form.username }}
+                    </div>
+                    {% if form.username.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">
+                            {{ form.username.errors.0 }}
+                        </p>
+                    {% endif %}
+                </div>
+                
+                <div class="mb-6">
+                    <label for="{{ form.password.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {{ form.password.label }}
+                    </label>
+                    <div class="mt-1">
+                        {{ form.password }}
+                    </div>
+                    {% if form.password.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">
+                            {{ form.password.errors.0 }}
+                        </p>
+                    {% endif %}
+                </div>
+                
+                {% if form.non_field_errors %}
+                    <div class="mb-4 p-4 bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-800 rounded-md">
+                        <p class="text-sm text-red-600 dark:text-red-400">
+                            {{ form.non_field_errors.0 }}
+                        </p>
+                    </div>
+                {% endif %}
+                
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Sign In" %}
+                    </button>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Don't have an account?" %}
+                        <a href="{% url 'users:register' %}" class="font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-500">
+                            {% trans "Register" %}
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

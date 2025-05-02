@@ -1,0 +1,52 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">{{ title }}</h1>
+    <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+        <div class="p-6">
+            <h2 class="text-xl font-semibold mb-3 {% if LANGUAGE_CODE == 'ar' %}text-ar-lg{% endif %}">
+                {% trans "About Our Project" %}
+            </h2>
+            <p class="mb-4 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                {% blocktrans %}
+                This is a demo project showcasing a multilingual Django application with Tailwind CSS integration.
+                The project is designed to demonstrate best practices for internationalization and localization in Django.
+                {% endblocktrans %}
+            </p>
+            
+            <h2 class="text-xl font-semibold my-4 {% if LANGUAGE_CODE == 'ar' %}text-ar-lg{% endif %}">
+                {% trans "Technology Stack" %}
+            </h2>
+            <ul class="list-disc pl-6 mb-6 space-y-2 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                <li>{% trans "Django - Web framework" %}</li>
+                <li>{% trans "Tailwind CSS - Utility-first CSS framework" %}</li>
+                <li>{% trans "Alpine.js - Minimal JavaScript framework" %}</li>
+                <li>{% trans "SQLite - Database (configurable to others)" %}</li>
+                <li>{% trans "Django REST Framework - API development" %}</li>
+            </ul>
+            
+            <h2 class="text-xl font-semibold my-4 {% if LANGUAGE_CODE == 'ar' %}text-ar-lg{% endif %}">
+                {% trans "Features" %}
+            </h2>
+            <ul class="list-disc pl-6 mb-6 space-y-2 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                <li>{% trans "Multi-language support" %}</li>
+                <li>{% trans "Dark and light theme" %}</li>
+                <li>{% trans "Responsive design" %}</li>
+                <li>{% trans "User authentication" %}</li>
+                <li>{% trans "REST API endpoints" %}</li>
+                <li>{% trans "RTL support for Arabic" %}</li>
+            </ul>
+            
+            <div class="mt-8 flex justify-center">
+                <a href="{% url 'core:contact' %}" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    {% trans "Contact Us" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

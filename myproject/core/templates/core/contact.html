@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">{{ title }}</h1>
+    <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+        <div class="p-6">
+            <p class="mb-6 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                {% blocktrans %}
+                Please fill out the form below to get in touch with us. We'll respond to your inquiry as soon as possible.
+                {% endblocktrans %}
+            </p>
+            
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Name" %}
+                    </label>
+                    <div class="mt-1">
+                        <input type="text" name="name" id="name" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Email" %}
+                    </label>
+                    <div class="mt-1">
+                        <input type="email" name="email" id="email" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Subject" %}
+                    </label>
+                    <div class="mt-1">
+                        <input type="text" name="subject" id="subject" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Message" %}
+                    </label>
+                    <div class="mt-1">
+                        <textarea id="message" name="message" rows="5" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}" required></textarea>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end">
+                    <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                        {% trans "Send Message" %}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
