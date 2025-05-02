@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">
+        {{ title }}
+    </h1>
+    <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+        <div class="p-6">
+            <p class="mb-4 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                {% blocktrans %}
+                Welcome to our multilingual Django application with Tailwind CSS. This project demonstrates:
+                {% endblocktrans %}
+            </p>
+            <ul class="list-disc pl-6 mb-6 space-y-2 {% if LANGUAGE_CODE == 'ar' %}text-ar-base{% endif %}">
+                <li>{% trans "Multi-language support (Arabic, Swedish, English, Turkish)" %}</li>
+                <li>{% trans "Dark mode with Tailwind CSS" %}</li>
+                <li>{% trans "Responsive design for all devices" %}</li>
+                <li>{% trans "Language switcher with flag icons" %}</li>
+                <li>{% trans "Right-to-left (RTL) support for Arabic" %}</li>
+                <li>{% trans "Custom font sizing for Arabic text" %}</li>
+            </ul>
+            <div class="mt-8 flex justify-center">
+                <a href="{% url 'core:about' %}" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    {% trans "Learn More" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
