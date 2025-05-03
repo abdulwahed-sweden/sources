@@ -1,0 +1,298 @@
+/* 
+   Custom SCSS for multilingual project
+   Using Bootstrap 5 framework
+*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+// Base font settings
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+// Language-specific fonts
+html[lang="en"] body {
+  font-family: 'Nunito', sans-serif;
+}
+
+html[lang="sv"] body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html[lang="tr"] body {
+  font-family: 'Poppins', sans-serif;
+}
+
+// RTL and Arabic language support
+html[lang="ar"] {
+  font-family: 'Tajawal', sans-serif;
+  
+  // Arabic headings with improved sizing
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  
+  h3, h4, h5, h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  // Special handling for display headings
+  .display-5, .display-6 {
+    font-size: 1.75rem !important;
+    font-weight: 700;
+  }
+  
+  // Arabic text elements with balanced sizing
+  p, div, span, li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  // Form elements and buttons
+  input, textarea, select, .form-control, .form-select {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  button, a, .btn, .nav-link {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  // Navbar elements
+  .navbar {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+    
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
+}
+
+// RTL icon flip for language switcher
+.rtl-flip {
+  transform: scaleX(-1);
+}
+
+// Dark mode support
+body.dark-mode {
+  background-color: #212529 !important;
+  color: #f8f9fa !important;
+  
+  // Dark navbar
+  .navbar {
+    background-color: #343a40 !important;
+    border-bottom: 1px solid #495057;
+    
+    .navbar-brand,
+    .navbar-nav .nav-link,
+    .navbar-toggler-icon {
+      color: #f8f9fa !important;
+    }
+  }
+  
+  // Dark cards
+  .card {
+    background-color: #343a40;
+    border-color: #495057;
+    color: #f8f9fa !important;
+    
+    .card-header,
+    .card-footer {
+      background-color: #212529;
+      border-color: #495057;
+    }
+  }
+  
+  // Dark inputs
+  .form-control,
+  .input-group-text,
+  .form-select {
+    background-color: #495057;
+    border-color: #6c757d;
+    color: #f8f9fa !important;
+    
+    &:focus {
+      background-color: #495057;
+      color: #f8f9fa !important;
+      border-color: #80bdff;
+    }
+  }
+  
+  // Dark buttons
+  .btn-outline-secondary {
+    color: #adb5bd;
+    border-color: #6c757d;
+    
+    &:hover {
+      background-color: #6c757d;
+      color: #f8f9fa;
+    }
+  }
+  
+  // Links in dark mode
+  a, 
+  .btn-link {
+    color: #8bb9fe !important;
+    
+    &:hover {
+      color: #aed1ff !important;
+    }
+  }
+  
+  // Dark footer
+  .footer {
+    background-color: #343a40 !important;
+    border-top: 1px solid #495057;
+  }
+  
+  .text-muted {
+    color: #adb5bd !important;
+  }
+  
+  // Dropdown in dark mode
+  .dropdown-menu {
+    background-color: #343a40;
+    border-color: #495057;
+    
+    .dropdown-item {
+      color: #f8f9fa;
+      
+      &:hover {
+        background-color: #495057;
+      }
+      
+      &.active {
+        background-color: #0d6efd;
+      }
+    }
+  }
+  
+  // Dark mode toggle icons
+  .light-mode-icon {
+    display: none;
+  }
+  
+  .dark-mode-icon {
+    display: inline-block !important;
+  }
+}
+
+// General styling overrides
+html, body {
+  height: 100%;
+}
+
+// Add box shadow to cards
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+// Improve form styling
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+// Fix alignment issues in RTL
+[dir="rtl"] {
+  .navbar-nav {
+    padding-right: 0;
+  }
+  
+  .dropdown-menu {
+    text-align: right;
+  }
+  
+  .me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
+  
+  .me-3 {
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+  }
+  
+  .ms-2 {
+    margin-left: 0 !important;
+    margin-right: 0.5rem !important;
+  }
+  
+  .text-md-end {
+    text-align: left !important;
+  }
+  
+  // Additional RTL fixes
+  .dropdown-item {
+    text-align: right;
+  }
+  
+  // Fix form elements in RTL
+  label {
+    text-align: right;
+    width: 100%;
+  }
+  
+  .form-check {
+    padding-left: 0;
+    padding-right: 1.25rem;
+    
+    .form-check-input {
+      float: right;
+      margin-left: 0;
+      margin-right: -1.25rem;
+    }
+  }
+}
+
+// Improve dark mode button
+#dark-mode-toggle {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+// Language switcher improvements
+.dropdown-menu {
+  .dropdown-item img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Responsive improvements
+@media (max-width: 768px) {
+  html[lang="ar"] {
+    h1, .display-5, .display-6 {
+      font-size: 1.5rem !important;
+    }
+    
+    h2 {
+      font-size: 1.2rem;
+    }
+    
+    .navbar .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+}

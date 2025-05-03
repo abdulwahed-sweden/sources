@@ -8,7 +8,7 @@ class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(
         label=_("Email"),
         max_length=254,
-        widget=forms.EmailInput(attrs={'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'})
+        widget=forms.EmailInput(attrs={'class': 'form-control'})
     )
     
     class Meta:
@@ -19,17 +19,17 @@ class CustomUserCreationForm(UserCreationForm):
         super().__init__(*args, **kwargs)
         for field_name in self.fields:
             self.fields[field_name].widget.attrs.update({
-                'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'
+                'class': 'form-control'
             })
 
 class CustomAuthenticationForm(AuthenticationForm):
     username = forms.CharField(
         label=_("Username"),
-        widget=forms.TextInput(attrs={'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'})
+        widget=forms.TextInput(attrs={'class': 'form-control'})
     )
     password = forms.CharField(
         label=_("Password"),
-        widget=forms.PasswordInput(attrs={'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'})
+        widget=forms.PasswordInput(attrs={'class': 'form-control'})
     )
 
 class ProfileForm(forms.ModelForm):
@@ -37,8 +37,16 @@ class ProfileForm(forms.ModelForm):
         model = Profile
         fields = ('bio', 'location', 'birth_date', 'preferred_language')
         widgets = {
-            'bio': forms.Textarea(attrs={'rows': 4, 'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'}),
-            'location': forms.TextInput(attrs={'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'}),
-            'birth_date': forms.DateInput(attrs={'type': 'date', 'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'}),
-            'preferred_language': forms.Select(choices=[('en', _('English')), ('sv', _('Swedish')), ('ar', _('Arabic')), ('tr', _('Turkish'))], attrs={'class': 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white rounded-md'}),
+            'bio': forms.Textarea(attrs={'rows': 4, 'class': 'form-control'}),
+            'location': forms.TextInput(attrs={'class': 'form-control'}),
+            'birth_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
+            'preferred_language': forms.Select(
+                choices=[
+                    ('en', _('English')), 
+                    ('sv', _('Swedish')), 
+                    ('ar', _('Arabic')), 
+                    ('tr', _('Turkish'))
+                ], 
+                attrs={'class': 'form-select'}
+            ),
         }
